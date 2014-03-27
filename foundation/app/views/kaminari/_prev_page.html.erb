@@ -1,0 +1,5 @@
+<% if current_page.first? %>
+    <li class="arrow unavailable"><a href="">&laquo;</a></li>
+<% else %>
+    <li class="arrow"><%= link_to raw('&laquo;'), url, :class => '', :remote => remote %></li>
+<% end %>

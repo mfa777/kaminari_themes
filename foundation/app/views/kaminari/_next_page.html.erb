@@ -1,0 +1,6 @@
+<% if current_page.last? %>
+    <li class="arrow unavailable"><a href="">&raquo;</a></li>
+<% else %>
+    <li class="arrow"><%= link_to raw('&raquo;'), url, :class => '', :remote => remote %></li>
+<% end %>
+
